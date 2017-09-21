@@ -159,29 +159,11 @@ namespace Quick_Reaction_Game
             Player whichPlayer = this.whichPlayer;
             if(whichPlayer == Player.Player1)
             {
-                if(player1LEDValue == GpioPinValue.High)
-                {
-                    player1LEDValue = GpioPinValue.Low;
-                    player1LED.Write(player1LEDValue);
-                }
-                else
-                {
-                    player1LEDValue = GpioPinValue.High;
-                    player1LED.Write(player1LEDValue);
-                }
+                //TODO: Write the code to blink the Player 1 LED here
             }
             else
             {
-                if (player2LEDValue == GpioPinValue.High)
-                {
-                    player2LEDValue = GpioPinValue.Low;
-                    player2LED.Write(player1LEDValue);
-                }
-                else
-                {
-                    player2LEDValue = GpioPinValue.High;
-                    player2LED.Write(player1LEDValue);
-                }
+                //TODO: Write the code to blink the Player 2 LED here
             }
         }
     }
