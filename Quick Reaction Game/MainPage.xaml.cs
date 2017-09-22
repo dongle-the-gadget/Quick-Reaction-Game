@@ -51,7 +51,7 @@ namespace Quick_Reaction_Game
             timer.Tick += Timer_Tick;
             if(player1Button != null & player2Button != null & player1LED != null & player2LED != null)
             {
-                
+                timer.Start();
             }
         }
 
@@ -106,13 +106,12 @@ namespace Quick_Reaction_Game
                 if(player1Pressed)
                 {
                     whichPlayer = Player.Player1;
-                    timer.Start();
+
                 }
                 // If player 1 pressed first, player 2 win
                 else
                 {
                     whichPlayer = Player.Player2;
-                    timer.Start();
                 }
             }
             else
@@ -121,7 +120,6 @@ namespace Quick_Reaction_Game
                 if (player1Pressed)
                 {
                     whichPlayer = Player.Player1;
-                    timer.Start();
                 }
             }
         }
@@ -134,13 +132,11 @@ namespace Quick_Reaction_Game
                 if (player2Pressed)
                 {
                     whichPlayer = Player.Player2;
-                    timer.Start();
                 }
                 // If player 1 pressed first, player 1 win
                 else
                 {
                     whichPlayer = Player.Player1;
-                    timer.Start();
                 }
             }
             else
@@ -149,7 +145,6 @@ namespace Quick_Reaction_Game
                 if (player1Pressed)
                 {
                     whichPlayer = Player.Player2;
-                    timer.Start();
                 }
             }
         }
